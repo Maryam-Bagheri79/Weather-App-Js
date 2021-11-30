@@ -14,6 +14,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/download.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
