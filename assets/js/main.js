@@ -10,6 +10,7 @@ let cities = {
     shiraz: { city: 'Shiraz', temp: '20', condition: 'Cloudy', humidity: '22', windSpeed: '31' }
 }
 
+let backGround = ['../img/images.jpg', '../img/image.jpg', '../img/img.jpg', '../img/pic.jpg', '../img/pic1.jpg']
 searchBtn.addEventListener('click', function () {
 
     let searchValue = searchInput.value;
@@ -17,6 +18,9 @@ searchBtn.addEventListener('click', function () {
     let mainCity = cities[searchValue]
 
     if (mainCity) {
+        // let random = Math.floor(Math.random() * backGround.length)
+        // document.body.style.backgroundImage = 'url(../img/images.jpg)'
+        // console.log(backGround[random])
         document.querySelector('.city').innerHTML = `Weather in ${mainCity.city}`
         document.querySelector('.temp').innerHTML = `${mainCity.temp} °C`
         document.querySelector('.condition').innerHTML = mainCity.condition
